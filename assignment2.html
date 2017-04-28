@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form>        <!--Creating Form-->
+        <fieldset>
+            <legend>Your Details:</legend> <!--Heading of the form-->
+            <label>Name: <input type="text" placeholder="enter name" name="name" size="30" maxlength="100"></label><br />
+            <label>Email: <input type="email" placeholder="your@emailaddress.com" name="email" size="30" maxlength="100"></label><br />
+        </fieldset><br />
+    </form>
+
+    <form>        <!--Creating Form-->
+        <fieldset>
+            <legend>Your Review:</legend><br/>            <!--Heading of the form-->
+            <label>How did you hear about us?</label>
+            <!--Label-->
+            <select name="selection_bar" id="sel_bar">    <!--Options-->
+                <option value="Google">Google</option>    <!--Option Google-->
+                <option value="Youtube">Youtube</option>  <!--Option Youtube-->
+                <option value="Yahoo">Yahoo</option>      <!--Option Yahoo-->
+                <option value="Media">Media</option>      <!--Option Media-->
+                </select><br /><br/>
+            <label>Would you visit again?</label><br />
+            <input type="radio" name="opinion">Yes            <!--radio button-->
+            <input type="radio" name="opinion">No            <!--radio button-->
+            <input type="radio" name="opinion">Maybe <br /><br/> <!--radio button-->
+            <label>Comments:</label> <br />
+            <textarea name="comments" id="comments_blog" cols="50" rows="4"></textarea> <br /> <br />
+            <input type="checkbox">Sign me up for email updates <br /> <br />
+            <input type="submit" value="Submit Review">
+        </fieldset>
+    </form>
+
+</body>
+</html>
